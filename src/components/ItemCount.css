@@ -1,0 +1,74 @@
+.item-count {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.item-count__controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  background: rgba(26, 26, 46, 0.5);
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid rgba(48, 232, 191, 0.3);
+}
+
+.item-count__button {
+  background: linear-gradient(135deg, #30e8bf, #3193bb);
+  color: #1a1a2e;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item-count__button:hover:not(:disabled) {
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(48, 232, 191, 0.5);
+}
+
+.item-count__button:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.item-count__number {
+  color: #30e8bf;
+  font-size: 1.5rem;
+  font-weight: 700;
+  min-width: 50px;
+  text-align: center;
+}
+
+.item-count__add-button {
+  background: linear-gradient(135deg, #30e8bf, #3193bb);
+  color: #1a1a2e;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.item-count__add-button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(48, 232, 191, 0.5);
+}
+
+.item-count__add-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
