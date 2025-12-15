@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
 import NavBar from './components/NavBar';
 import ItemListContainer from './components/ItemListContainer';
@@ -7,7 +7,7 @@ import NotFound from './components/NotFound';
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <h1 style={{
         textAlign: 'center',
         marginTop: '4rem',
@@ -25,7 +25,7 @@ function App() {
         <Route path="/item/:itemId" element={<ItemDetailContainer />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
